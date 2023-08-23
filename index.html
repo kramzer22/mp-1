@@ -13,52 +13,8 @@
   <body>
     <header class="header">
       <!-- <div><h3 class="header-title">MaRk dAviD</h3></div> -->
-      <div class="menu-switch">
+      <div id="menuSwitch" class="menu-switch">
         <div><i class="fa-solid fa-bars fa-xl" style="color: #ffff"></i></div>
-        <nav class="menu">
-          <ul>
-            <li>
-              <a href="#title" target="_self">Home</a>
-            </li>
-            <li>
-              <a href="#about" target="_self">About</a>
-            </li>
-            <li>
-              <a href="#portfolio" target="_self">Portfolio</a>
-            </li>
-            <li>
-              <a
-                href="https://www.dropbox.com/scl/fi/au8tk7bxnzhmbq7iuhljz/MARK-DAVID-D.docx?rlkey=1sjncmomscg3wvzghty8fe8yt&dl=0"
-                target="_blank"
-                >Resume</a
-              >
-            </li>
-            <li>
-              <p>Blog</p>
-            </li>
-            <li>
-              <a href="#contact" target="_self">Contact</a>
-            </li>
-          </ul>
-
-          <ul class="social-link">
-            <li>
-              <p>Facebook</p>
-              <i
-                class="fa-brands fa-square-facebook"
-                style="color: #494b50"
-              ></i>
-            </li>
-            <li>
-              <p>linkedIn</p>
-              <i class="fa-brands fa-linkedin" style="color: #494b50"></i>
-            </li>
-            <li>
-              <p>Twitter</p>
-              <i class="fa-brands fa-square-twitter" style="color: #494b50"></i>
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
     <main class="main">
@@ -183,10 +139,57 @@
       </div>
     </main>
 
-    <div class="mobile-return-top">
+    <div id="returnTop" class="mobile-return-top">
       <a href="#" target="_self"
         ><i class="fa-solid fa-arrow-up fa-lg" style="color: #ffffff"></i
       ></a>
     </div>
+
+    <div id="dropMenu" class="drop-menu">
+      <div id="dropMenuSpacer" class="drop-menu-spacer"></div>
+      <nav id="menu" class="menu">
+        <ul>
+          <li class="menu-item">
+            <a href="#title" target="_self">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="#about" target="_self">About</a>
+          </li>
+          <li class="menu-item">
+            <a href="#portfolio" target="_self">Portfolio</a>
+          </li>
+          <li class="menu-item">
+            <a
+              href="https://www.dropbox.com/scl/fi/au8tk7bxnzhmbq7iuhljz/MARK-DAVID-D.docx?rlkey=1sjncmomscg3wvzghty8fe8yt&dl=0"
+              target="_blank"
+              >Resume</a
+            >
+          </li>
+          <li class="menu-item">
+            <p>Blog</p>
+          </li>
+          <li class="menu-item">
+            <a href="#contact" target="_self">Contact</a>
+          </li>
+        </ul>
+
+        <ul class="social-link">
+          <li class="menu-item">
+            <p>Facebook</p>
+            <i class="fa-brands fa-square-facebook" style="color: #494b50"></i>
+          </li>
+          <li class="menu-item">
+            <p>linkedIn</p>
+            <i class="fa-brands fa-linkedin" style="color: #494b50"></i>
+          </li>
+          <li class="menu-item">
+            <p>Twitter</p>
+            <i class="fa-brands fa-square-twitter" style="color: #494b50"></i>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

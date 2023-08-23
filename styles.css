@@ -37,20 +37,39 @@ body {
   cursor: pointer;
 }
 
+.drop-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+
+  width: 100vw;
+  height: 100vh;
+
+  position: fixed;
+  right: -100vw;
+  top: 0;
+
+  z-index: 2;
+  transition: right 0.3s ease;
+}
+
+.drop-menu-spacer {
+  width: 100%;
+  height: 100%;
+  background-color: #6f7980;
+  opacity: 0;
+}
+
 .menu {
-  display: none;
+  background-color: #c3e0e5;
+
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
 
-  background-color: #c3e0e5;
+  width: 50%;
   height: 100%;
-
-  position: fixed;
-  width: auto;
   padding-bottom: 5px;
-  top: 0;
-  right: 0;
-  z-index: 2;
   box-shadow: rgba(92, 84, 95, 0.2) -4px 0;
 }
 
@@ -91,12 +110,6 @@ body {
   flex-direction: row;
   justify-content: right;
   gap: 20px;
-}
-
-.menu-switch:hover .menu {
-  display: flex;
-
-  transition: right 2 ease-in-out;
 }
 
 /* End of Header */
