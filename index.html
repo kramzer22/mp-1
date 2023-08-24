@@ -12,7 +12,7 @@
   </head>
   <body>
     <header class="header">
-      <!-- <div><h3 class="header-title">MaRk dAviD</h3></div> -->
+      <div class="header-name"><h3 class="header-title">M.D</h3></div>
       <div id="menuSwitch" class="menu-switch">
         <div><i class="fa-solid fa-bars fa-xl" style="color: #ffff"></i></div>
       </div>
@@ -21,30 +21,35 @@
       <article id="title" class="content title">
         <h2 class="article-title">Hello World!</h2>
         <section>
-          <h3><span>I am</span> Mark David Panganiban</h3>
           <p>
-            I'm a <span>software developer</span> with almost
-            <span>10 years</span> of experience with software programming.
+            My name is Mark David D. Panganiban, 36 years old, a software
+            engineer for almost 10 years. All throughout this time I learned a
+            lot of programming languages.
           </p>
         </section>
         <section class="profile-pic">
-          <img src="mp-01/images/profile.jpg" alt="profile pic" />
+          <img src="mp-01/images/computer-display.svg" alt="profile pic" />
         </section>
         <hr />
       </article>
       <article id="about" class="content about">
         <h2 class="article-title">About Me</h2>
-        <section>
+        <section class="article-content about-me">
+          <img
+            class="about-me-img1"
+            src="mp-01/images/person-about.svg"
+            alt="person holding glass"
+          />
           <p>
-            I'm a Full Stack Software Developer mainly on desktop application. I
-            am currently enrolled on KodeGo on their bootcamp for Full Stack Web
-            Development. For 10 years, I learned a lot of programming languages
-            with no stop on learning and improving my current skillset. Want to
-            know more <a href="#contact" target="_self">about me</a>?
+            I'm a Full Stack Software Developer mainly working on desktop
+            applications. I learned programming on Polythecnic University of the
+            Philippines. My first programming language is C++.
+            <a href="#contact" target="_self">Want to learn more about me</a>?
           </p>
         </section>
-        <section class="languages">
-          <h3>Langues</h3>
+
+        <section class="article-content skills">
+          <h2>Langues</h2>
           <div class="skill-grid">
             <div class="skill-item">
               <img src="mp-01/images/csharp.svg" alt="c sharp icon" />
@@ -75,28 +80,101 @@
               <p>JS</p>
             </div>
             <div class="skill-item">
-              <img src="mp-01/images/sql.svg" alt="c sharp icon" />
+              <img src="mp-01/images/sql-stamp.svg" alt="c sharp icon" />
               <p>SQL</p>
             </div>
           </div>
         </section>
         <section class="language-view">
-          <p>
-            class HelloWorld {<br /><br />
-            public static void main(String[] args) {<br />
-            &nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Hello, World!");
-            <br />} <br />} |
-          </p>
+          <div class="carousel-skill-view">
+            <div class="carousel-skill-slide">
+              <img src="mp-01/images/csharp.svg" alt="" />
+              <p>Experience: 2 years</p>
+              <p>Skill Rate: 7</p>
+              <p>Projects launched: 0</p>
+            </div>
+            <div class="carousel-skill-slide">
+              <img src="mp-01/images/python.svg" alt="" />
+              <p>Experience: 3 years</p>
+              <p>Skill Rate: 10</p>
+              <p>Projects launched: 2</p>
+            </div>
+            <div class="carousel-skill-slide">
+              <img src="mp-01/images/java.svg" alt="" />
+              <p>Experience: 2 years</p>
+              <p>Skill Rate: 9</p>
+              <p>Projects launched: 3</p>
+            </div>
+            <div class="carousel-skill-slide">
+              <img src="mp-01/images/vb.svg" alt="" />
+              <p>Experience: 6 years</p>
+              <p>Skill Rate: 10</p>
+              <p>Projects launched: 10</p>
+            </div>
+            <div class="carousel-skill-slide">
+              <img src="mp-01/images/html.svg" alt="" />
+              <p>Experience: 1 years</p>
+              <p>Skill Rate: 5</p>
+              <p>Projects launched: 1</p>
+            </div>
+            <div class="carousel-skill-slide">
+              <img src="mp-01/images/css.svg" alt="" />
+              <p>Experience: 1 years</p>
+              <p>Skill Rate: 5</p>
+              <p>Projects launched: 1</p>
+            </div>
+            <div class="carousel-skill-slide">
+              <img src="mp-01/images/javascript.svg" alt="" />
+              <p>Experience: 1 years</p>
+              <p>Skill Rate: 5</p>
+              <p>Projects launched: 0</p>
+            </div>
+            <div class="carousel-skill-slide">
+              <img src="mp-01/images/sql-stamp.svg" alt="" />
+              <p>Experience: 7 years</p>
+              <p>Skill Rate: 10</p>
+              <p>Projects launched: 13</p>
+            </div>
+          </div>
         </section>
-        <hr />
       </article>
 
       <article id="portfolio" class="content portfolio">
         <h2 class="article-title">Portfolio</h2>
-        <section>
+        <section class="portfolio-content">
+          <img class="portfolio-img" src="mp-01/images/eye.svg" alt="" />
+          <h3>Glaucoma Eye Checker</h3>
           <p>
-            This part is currently empty. This will be filled with projects as I
-            progress with my bootcamp on KodeGo. Progress will continue
+            This project detects the severity of patient's eyes using a camera
+            to capture the pupil. The software will calculate and tracing the
+            affected area before generating a report how severe the patient's
+            eye condition. <em>Develop on Python</em>
+          </p>
+        </section>
+        <section class="portfolio-content">
+          <img class="portfolio-img" src="mp-01/images/patient.svg" alt="" />
+          <h3>Patient Management</h3>
+          <p>
+            This is a full stack application that manage patient records such as
+            check-ups, lab results, transaction history, profiles and health
+            conditions. <em>Develop on VB</em>
+          </p>
+        </section>
+        <section class="portfolio-content">
+          <img class="portfolio-img" src="mp-01/images/car.svg" alt="" />
+          <h3>2D Car Slide Game</h3>
+          <p>
+            The goal of the game is to create a top score by dodging cars via
+            tapping the screen of the device. <em>Develop on Java</em>
+          </p>
+        </section>
+        <section class="portfolio-content">
+          <img class="portfolio-img" src="mp-01/images/student.svg" alt="" />
+          <h3>Online Student Management Application</h3>
+          <p>
+            Teachers upload student grades and performance where student can
+            check later. This also features a chat where student can message
+            their Professors vice versa. <em>Develop on PHP</em>
           </p>
         </section>
         <section>
@@ -188,6 +266,11 @@
           </li>
         </ul>
       </nav>
+    </div>
+
+    <div id="introduction" class="introduction">
+      <h1 id="introduction_header"></h1>
+      <p id="introduction_1"></p>
     </div>
 
     <script src="script.js"></script>
