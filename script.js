@@ -37,7 +37,7 @@ window.addEventListener("scroll", () => {
 });
 
 /* Introduction appearance */
-const displayIntro = false;
+const displayIntro = true;
 const introduction = document.getElementById("introduction");
 let introFinish = false;
 const introductionHeader = document.getElementById("introduction_header");
