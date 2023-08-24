@@ -44,6 +44,8 @@ const introductionHeader = document.getElementById("introduction_header");
 let headIndex = 0;
 const introduction1 = document.getElementById("introduction_1");
 let bodyIndex = 0;
+const indicatorBall = document.getElementById("introductionInditcator");
+let ballSwitch = true;
 
 function introType() {
   var textIntroduction = "Hello World!";
@@ -93,6 +95,21 @@ function introType() {
   //   }, textIntro1.length * 110);
   // }, textIntroduction.length * 200);
 }
+
+function changeBallColor() {
+  if (displayIntro === true) {
+    if (ballSwitch === true) {
+      indicatorBall.style.backgroundColor = "#2c6f8e";
+      ballSwitch = false;
+    } else {
+      indicatorBall.style.backgroundColor = "#fbeec1";
+      ballSwitch = true;
+    }
+    setTimeout(changeBallColor, 1000);
+  }
+}
+
+changeBallColor();
 
 introType();
 

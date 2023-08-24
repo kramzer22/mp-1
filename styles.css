@@ -17,10 +17,11 @@ body {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   gap: 10px;
 
+  padding: 30px;
   position: fixed;
   top: 0;
   right: 0;
@@ -41,6 +42,16 @@ body {
 .introduction p {
   text-align: center;
   font-size: 20px;
+}
+
+.introduction-indicator {
+  margin-top: 40px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fbeec1;
+  box-shadow: rgba(199, 185, 204, 0.6) 0 0 40px;
+  transition: background-color 1s ease-in-out;
 }
 
 .header {
@@ -472,21 +483,6 @@ body {
   height: 40px;
 }
 
-/* Header animation */
-
-/* .content {
-  opacity: 0;
-  transition: opacity is ease-in-out;
-}
-
-.header.content:first-child {
-  transition-delay: 0.5s;
-}
-
-.header:hover .content {
-  opacity: 1;
-} */
-
 .mobile-return-top {
   background-color: #6f7980;
   position: fixed;
@@ -501,3 +497,162 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  .header {
+    height: 90px;
+  }
+
+  .menu-switch {
+    font-size: 40px;
+  }
+
+  .header-title {
+    font-size: 40px;
+    padding-right: 0;
+  }
+
+  .menu {
+    width: 600px;
+    justify-content: space-between;
+  }
+
+  .menu-item {
+    font-size: 40px;
+    width: 320px;
+    align-items: right;
+  }
+
+  .menu ul li:hover {
+    font-size: 46px;
+  }
+
+  .mobile-return-top {
+    width: 100px;
+    height: 100px;
+  }
+
+  .mobile-return-top i {
+    font-size: 36px;
+  }
+
+  .content {
+    padding: 60px;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .content section p {
+    font-size: 30px;
+  }
+
+  .article-title {
+    font-size: 50px;
+  }
+
+  .skill-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .language-view {
+    height: 460px;
+  }
+
+  .carousel-skill-slide img {
+    margin-top: 70px;
+    width: 130px;
+    height: auto;
+  }
+
+  .carousel-skill-slide p {
+    font-size: 60px;
+  }
+
+  .portfolio-content {
+    height: 660px;
+    padding: 50px;
+    gap: 40px;
+  }
+
+  .portfolio-content h3 {
+    font-size: 40px;
+  }
+
+  .portfolio-content img {
+    width: 150px;
+    height: auto;
+  }
+
+  .portfolio-content p {
+    font-weight: 600;
+  }
+
+  .portfolio:last-of-type section img {
+    width: 200px;
+    height: auto;
+  }
+
+  .contact {
+    gap: 40px;
+    padding-bottom: 60px;
+  }
+
+  .contact h3 {
+    font-size: 50px;
+  }
+
+  .contact div p {
+    font-size: 40px;
+  }
+
+  .contact div input {
+    height: 60px;
+    font-size: 40px;
+  }
+
+  .contact div textarea {
+    height: 400px;
+    font-size: 40px;
+  }
+
+  .contact div button {
+    height: 80px;
+    width: 280px;
+    font-size: 36px;
+
+    border-radius: 10px;
+  }
+
+  .introduction {
+    padding: 70px;
+    justify-content: space-between;
+  }
+
+  .introduction h1 {
+    font-size: 60px;
+  }
+
+  .introduction p {
+    font-size: 40px;
+  }
+
+  .introduction-indicator {
+  }
+}
+
+/* Header animation */
+
+/* .content {
+  opacity: 0;
+  transition: opacity is ease-in-out;
+}
+
+.header.content:first-child {
+  transition-delay: 0.5s;
+}
+
+.header:hover .content {
+  opacity: 1;
+} */
