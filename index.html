@@ -13,20 +13,66 @@
   <body>
     <header class="header">
       <div class="header-name"><h3 class="header-title">M.D</h3></div>
+      <div class="top-menu-container">
+        <nav id="menu" class="top-menu">
+          <ul>
+            <li class="top-menu-item">
+              <a href="#title" target="_self">Home</a>
+            </li>
+            <li class="top-menu-item">
+              <a href="#about" target="_self">About</a>
+            </li>
+            <li class="top-menu-item">
+              <a href="#portfolio" target="_self">Portfolio</a>
+            </li>
+            <li class="top-menu-item">
+              <a
+                href="https://www.dropbox.com/scl/fi/au8tk7bxnzhmbq7iuhljz/MARK-DAVID-D.docx?rlkey=1sjncmomscg3wvzghty8fe8yt&dl=0"
+                target="_blank"
+                >Resume</a
+              >
+            </li>
+            <li class="top-menu-item">
+              <p>Blog</p>
+            </li>
+            <li class="top-menu-item">
+              <a href="#contact" target="_self">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <div id="menuSwitch" class="menu-switch">
-        <div><i class="fa-solid fa-bars fa-xl" style="color: #ffff"></i></div>
+        <div><i class="fa-solid fa-bars fa-xl"></i></div>
       </div>
     </header>
     <main class="main">
       <article id="title" class="content title">
-        <h2 class="article-title">Hello World!</h2>
-        <section>
-          <p>
-            My name is Mark David D. Panganiban, 36 years old, a software
-            engineer for almost 10 years. All throughout this time I learned a
-            lot of programming languages.
-          </p>
-        </section>
+        <div class="introduction-title">
+          <div>
+            <h2 class="article-title">Hello World!</h2>
+            <section>
+              <p>
+                My name is Mark David D. Panganiban, 36 years old, a software
+                engineer for almost 10 years. All throughout this time I learned
+                a lot of programming languages.
+              </p>
+            </section>
+          </div>
+          <div class="social-link-container">
+            <p>Here are my social links:</p>
+            <ul class="social-link-top">
+              <li class="top-menu-item">
+                <i class="fa-brands fa-square-facebook"></i>
+              </li>
+              <li class="top-menu-item">
+                <i class="fa-brands fa-linkedin"></i>
+              </li>
+              <li class="top-menu-item">
+                <i class="fa-brands fa-square-twitter"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
         <section class="profile-pic">
           <img src="mp-01/images/computer-display.svg" alt="profile pic" />
         </section>
@@ -34,57 +80,59 @@
       </article>
       <article id="about" class="content about">
         <h2 class="article-title">About Me</h2>
-        <section class="article-content about-me">
-          <img
-            class="about-me-img1"
-            src="mp-01/images/person-about.svg"
-            alt="person holding glass"
-          />
-          <p>
-            I'm a Full Stack Software Developer mainly working on desktop
-            applications. I learned programming on Polythecnic University of the
-            Philippines. My first programming language is C++.
-            <a href="#contact" target="_self">Want to learn more about me</a>?
-          </p>
-        </section>
+        <div class="about-container">
+          <section class="article-content about-me">
+            <img
+              class="about-me-img1"
+              src="mp-01/images/person-about.svg"
+              alt="person holding glass"
+            />
+            <p>
+              I'm a Full Stack Software Developer mainly working on desktop
+              applications. I learned programming on Polythecnic University of
+              the Philippines. My first programming language is C++.
+              <a href="#contact" target="_self">Want to learn more about me</a>?
+            </p>
+          </section>
+          <section class="article-content skills">
+            <h2>Langues</h2>
+            <div class="skill-grid">
+              <div class="skill-item">
+                <img src="mp-01/images/csharp.svg" alt="c sharp icon" />
+                <p>C#</p>
+              </div>
+              <div class="skill-item">
+                <img src="mp-01/images/python.svg" alt="c sharp icon" />
+                <p>Python</p>
+              </div>
+              <div class="skill-item">
+                <img src="mp-01/images/java.svg" alt="c sharp icon" />
+                <p>Java</p>
+              </div>
+              <div class="skill-item">
+                <img src="mp-01/images/vb.svg" alt="c sharp icon" />
+                <p>VB</p>
+              </div>
+              <div class="skill-item">
+                <img src="mp-01/images/html.svg" alt="c sharp icon" />
+                <p>HTML</p>
+              </div>
+              <div class="skill-item">
+                <img src="mp-01/images/css.svg" alt="c sharp icon" />
+                <p>CSS</p>
+              </div>
+              <div class="skill-item">
+                <img src="mp-01/images/javascript.svg" alt="c sharp icon" />
+                <p>JS</p>
+              </div>
+              <div class="skill-item">
+                <img src="mp-01/images/sql-stamp.svg" alt="c sharp icon" />
+                <p>SQL</p>
+              </div>
+            </div>
+          </section>
+        </div>
 
-        <section class="article-content skills">
-          <h2>Langues</h2>
-          <div class="skill-grid">
-            <div class="skill-item">
-              <img src="mp-01/images/csharp.svg" alt="c sharp icon" />
-              <p>C#</p>
-            </div>
-            <div class="skill-item">
-              <img src="mp-01/images/python.svg" alt="c sharp icon" />
-              <p>Python</p>
-            </div>
-            <div class="skill-item">
-              <img src="mp-01/images/java.svg" alt="c sharp icon" />
-              <p>Java</p>
-            </div>
-            <div class="skill-item">
-              <img src="mp-01/images/vb.svg" alt="c sharp icon" />
-              <p>VB</p>
-            </div>
-            <div class="skill-item">
-              <img src="mp-01/images/html.svg" alt="c sharp icon" />
-              <p>HTML</p>
-            </div>
-            <div class="skill-item">
-              <img src="mp-01/images/css.svg" alt="c sharp icon" />
-              <p>CSS</p>
-            </div>
-            <div class="skill-item">
-              <img src="mp-01/images/javascript.svg" alt="c sharp icon" />
-              <p>JS</p>
-            </div>
-            <div class="skill-item">
-              <img src="mp-01/images/sql-stamp.svg" alt="c sharp icon" />
-              <p>SQL</p>
-            </div>
-          </div>
-        </section>
         <section class="language-view">
           <div class="carousel-skill-view">
             <div class="carousel-skill-slide">
