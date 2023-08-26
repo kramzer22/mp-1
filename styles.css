@@ -11,6 +11,12 @@ body {
   background-color: #ffff;
 }
 
+footer {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
 .introduction {
   color: #fff;
   background-color: #000000;
